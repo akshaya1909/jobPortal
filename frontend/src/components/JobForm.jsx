@@ -94,7 +94,7 @@ const JobForm = ({ onClose }) => {
           <div className="form-group">
             <label>Job Type</label>
             <select {...register("jobType", { required: true })}>
-              <option value="FullTime">FullTime</option>
+              <option value="FullTime">Onsite</option>
               <option value="PartTime">PartTime</option>
               <option value="Remote">Remote</option>
               <option value="Internship">Internship</option>
