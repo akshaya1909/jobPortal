@@ -1,9 +1,10 @@
 // src/features/jobs/jobsApi.js
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { BASE_URL } from '../constants';
 
 export const jobsApi = createApi({
   reducerPath: 'jobsApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/api' }),
+  baseQuery: fetchBaseQuery({ baseUrl: BASE_URL}),
   tagTypes: ['Jobs'], 
   endpoints: () => ({}),
 });
