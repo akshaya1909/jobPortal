@@ -1,0 +1,147 @@
+.form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .header-div{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    position: relative; 
+    margin-bottom: 30px;
+  }
+  
+  .create-job-form {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .create-job-form label {
+    color: #636363;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .create-job-form h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #222222;
+    text-align: center;
+  }
+  
+  .create-job-form input,
+  .create-job-form textarea,
+  .create-job-form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 4px;
+  }
+
+  .create-job-form input::placeholder {
+    font-weight: 500;
+    font-size: 13px;
+    color: #BCBCBC;
+  }
+
+  .create-job-form select option:first-child {
+    font-weight: 500;
+    font-size: 13px;
+    color: #BCBCBC;
+  }
+  
+  .create-job-form button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #f3f3f3;
+    color: #333;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .half-width {
+    width: 48%; /* or 49% to leave small gap */
+    display: inline-block;
+    margin-right: 4%;
+  }
+
+  .salary-row {
+  display: flex;
+  gap: 12px;
+}
+
+.salary-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  color: #ff0505;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+
+.salary-range-inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.salary-range-inputs input {
+  width: 120px; /* 👈 Adjust width to keep layout tight */
+}

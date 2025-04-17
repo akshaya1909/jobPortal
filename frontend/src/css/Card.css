@@ -1,0 +1,135 @@
+.card {
+  position: relative;
+    min-height: 330px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card .inner-division-1 {
+    width: 83.46px;
+    height: 82px;
+    margin-top: 16px;  /* Top space inside the card */
+    left: 16px; /* Left space inside the card */
+    border-radius: 13.18px;
+    margin-bottom: 22px;
+    border: 1px solid white; /* Border for the division */
+    background: linear-gradient(180deg, #FEFEFD 0%, #F1F1F1 100%); /* Linear gradient */
+    box-shadow: 0 10.25px 25% rgba(148, 148, 148, 1); 
+  }
+
+  .card .inner-division-1 .time-box {
+    width: 75px;
+    height: 33px;
+    position: absolute;
+    top: 16px; /* Space from the top of the inner division */
+    right: 19px;
+    border-radius: 10px;
+    background-color: #B0D9FF; /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the text */
+  }
+  
+  .card .inner-division-1 .time-box .time-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000; /* Text color */
+  }
+
+  
+  .icon-img {
+    width: 65.89px;
+    height: 65.89px;
+    margin-top: 8.05px;
+    margin-left: 8.79px;
+  }
+  
+  .card-role-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #000000;
+  }
+  
+  .card-description {
+    margin-top: 19px;
+    width: fit-content;
+    height: 22px;
+    font-size: 14px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .desc-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .desc-icon {
+    width: 19px;
+    height: 15px;
+  }
+  
+  .desc-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #5a5a5a;
+  }
+
+  .job-description {
+    margin-top: 19px;
+    padding-left: 0;
+    margin-bottom: 60px;
+  }
+  
+  .job-description ul {
+    list-style-type: disc;      /* Ensure bullets appear */
+    list-style-position: outside; /* Bullets stay outside */
+    text-decoration: none;
+    padding-left: 18px;         
+    margin: 0;
+  }
+  
+  .job-description li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #555555;
+    margin-bottom: 10px;
+  }
+  
+  .card .apply-button {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    height: 46px; /* Or whatever height looks best */
+    background-color: #00AAFF;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
