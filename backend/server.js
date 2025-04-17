@@ -15,7 +15,7 @@ app.use(express.json());
 app.use("/api", jobRoutes);
 
 // Serve static files in uploads folder
-const __dirname = path.resolve
+const __dirname = path.resolve();
 app.use('/uploads', express.static(path.join(path.resolve(), '/uploads')));
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static(path.join(__dirname, '/frontend/build')));
