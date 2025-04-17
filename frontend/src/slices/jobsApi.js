@@ -14,13 +14,13 @@ export const extendedJobsApi = jobsApi.injectEndpoints({
     getJobs: builder.query({
       query: (filters) => {
         const params = new URLSearchParams(filters).toString();
-        return `/jobs?${params}`;
+        return `/api/jobs?${params}`;
       },
       providesTags: ['Jobs'],
     }),
     createJob: builder.mutation({
         query: (jobData) => ({
-          url: '/jobs',
+          url: '/api/jobs',
           method: 'POST',
           body: jobData,
         }),
@@ -29,7 +29,7 @@ export const extendedJobsApi = jobsApi.injectEndpoints({
       }),
     uploadLogo: builder.mutation({
       query: (formData) => ({
-        url: '/upload',
+        url: '/api/upload',
         method: 'POST',
         body: formData,
       }),
