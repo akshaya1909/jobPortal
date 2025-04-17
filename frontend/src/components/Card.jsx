@@ -18,7 +18,19 @@ const Card = ({ jobData }) => {
     experience, // Optional field
   } = jobData;
 
-  const formattedSalary = `${Math.round(salary?.to / 100000)} LPA`;
+  const formatSalary = (amount) => {
+    if (!amount) return "";
+  
+    if (amount >= 100000) {
+      return `${Math.round(amount / 100000)} LPA`;
+    } else {
+      return `${Math.round(amount / 1000)}k`;
+    }
+  };
+  
+  // Usage
+  const formattedSalary = formatSalary(salary?.to);
+  
   const createdDate = new Date(createdAt);
 const now = new Date();
 

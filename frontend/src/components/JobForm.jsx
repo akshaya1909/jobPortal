@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useCreateJobMutation, useUploadLogoMutation } from "../slices/jobsApi";
+import Vector from '../assets/Vector.png';
 
 const JobForm = ({ onClose }) => {
   const {
@@ -110,12 +111,12 @@ const JobForm = ({ onClose }) => {
       <input
         type="number"
         {...register("salaryMin")}
-        placeholder="₹0"
+        placeholder="↑↓ 0"
       />
       <input
         type="number"
         {...register("salaryMax")}
-        placeholder="₹12,00,000"
+        placeholder="↑↓ 12,00,000"
       />
     </div>
           </div>
@@ -130,7 +131,7 @@ const JobForm = ({ onClose }) => {
           <label>Job Description</label>
           <textarea
             {...register("description")}
-            rows="4"
+            rows="7"
             placeholder="Please share a description to let the candidate know more about the job role"
           ></textarea>
         </div>
@@ -149,7 +150,8 @@ const JobForm = ({ onClose }) => {
           style={{justifyContent: 'space-between', marginTop: '16px' }}
         >
           <button type="button" onClick={onClose} className="cancel-btn">
-            Save Draft
+            Save Draft 
+            <img src={Vector}alt="icon" className="save-icon" />
           </button>
           <button type="submit" className="submit-btn">
             Publish »
